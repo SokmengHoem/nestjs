@@ -1,0 +1,24 @@
+GET http://localhost:3000
+
+### SEND FETCH SONGS REQEST
+GET http://localhost:3000/songs
+
+### FIND SONG REQEST
+GET http://localhost:3000/songs/1
+
+### CREATE NEW SONGS REQEST
+POST  http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "title": "no body",
+    "artists": ["sigla"],
+    "releasedDate" : "2022-10-20",
+    "duration": "02:30"
+}
+
+### UPDATE SONGS REQEST
+PUT  http://localhost:3000/songs/1
+
+### DELETE SONGS REQEST
+DELETE  http://localhost:3000/songs/1
